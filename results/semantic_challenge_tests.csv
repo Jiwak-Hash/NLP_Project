@@ -1,0 +1,13 @@
+sentence1,sentence2,intended_label,model,predicted_class,paraphrase_probability,label,correct,cosine_similarity
+How can I learn Python?,What is the best way to study Python?,1,TF-IDF,1,0.7816144416976232,Paraphrase,True,
+How can I learn Python?,What is the best way to study Python?,1,Sentence-BERT,1,0.8763535022735596,Paraphrase,True,0.8315802812576294
+What causes rain?,How do I bake a chocolate cake?,0,TF-IDF,0,0.17309073944910452,Not Paraphrase,True,
+What causes rain?,How do I bake a chocolate cake?,0,Sentence-BERT,0,0.0008680727332830429,Not Paraphrase,True,0.13188953697681427
+The dog chased the cat.,The cat chased the dog.,0,TF-IDF,1,0.8714386670553496,Paraphrase,False,
+The dog chased the cat.,The cat chased the dog.,0,Sentence-BERT,1,0.9790120720863342,Paraphrase,False,0.9913338422775269
+He bought a car.,He purchased an automobile.,1,TF-IDF,0,0.028917900447778876,Not Paraphrase,False,
+He bought a car.,He purchased an automobile.,1,Sentence-BERT,1,0.7175142168998718,Paraphrase,True,0.9159471988677979
+I like coffee.,I do not like coffee.,0,TF-IDF,0,0.49103122151543627,Not Paraphrase,True,
+I like coffee.,I do not like coffee.,0,Sentence-BERT,1,0.5812833309173584,Paraphrase,False,0.8024633526802063
+The meeting was postponed.,The meeting was moved to a later date.,1,TF-IDF,0,0.25513041490864596,Not Paraphrase,False,
+The meeting was postponed.,The meeting was moved to a later date.,1,Sentence-BERT,0,0.32575738430023193,Not Paraphrase,False,0.7038222551345825

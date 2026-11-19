@@ -1,0 +1,13 @@
+{
+  "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "embedding_dimension": 384,
+  "normalized": true,
+  "max_seq_length": 256,
+  "versions": {
+    "torch": "2.15.0+cpu",
+    "sentence-transformers": "6.3.0",
+    "transformers": "5.23.0",
+    "scikit-learn": "1.9.1"
+  }
+}

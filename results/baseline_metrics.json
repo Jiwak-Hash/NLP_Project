@@ -1,0 +1,134 @@
+{
+  "metrics": {
+    "accuracy": 0.7784263771055431,
+    "precision": 0.6697994269340974,
+    "recall": 0.7852727761354474,
+    "f1": 0.7229541658934867,
+    "macro_f1": 0.7691722441041088,
+    "roc_auc": 0.8689862712828098
+  },
+  "confusion_matrix": [
+    [
+      19783,
+      5762
+    ],
+    [
+      3196,
+      11688
+    ]
+  ],
+  "confusion_matrix_order": "rows=true, columns=predicted; labels=[0,1]",
+  "classification_report": {
+    "Not Paraphrase": {
+      "precision": 0.8609164889681884,
+      "recall": 0.7744372675670386,
+      "f1-score": 0.8153903223147309,
+      "support": 25545.0
+    },
+    "Paraphrase": {
+      "precision": 0.6697994269340974,
+      "recall": 0.7852727761354474,
+      "f1-score": 0.7229541658934867,
+      "support": 14884.0
+    },
+    "accuracy": 0.7784263771055431,
+    "macro avg": {
+      "precision": 0.7653579579511429,
+      "recall": 0.779855021851243,
+      "f1-score": 0.7691722441041088,
+      "support": 40429.0
+    },
+    "weighted avg": {
+      "precision": 0.7905564416923367,
+      "recall": 0.7784263771055431,
+      "f1-score": 0.7813598058000063,
+      "support": 40429.0
+    }
+  },
+  "leakage_audit": {
+    "normalization": "collapse whitespace, case-sensitive, unordered sentence pairs",
+    "shared_unique_pairs": 2,
+    "excluded_training_rows": 2,
+    "training_rows_after_removal": 363825,
+    "remaining_shared_pairs": 0,
+    "contradictory_train_pairs": 0,
+    "contradictory_validation_pairs": 0,
+    "contradictory_pairs_across_labeled_splits": 0,
+    "contradictory_retained_train_pairs": 0
+  },
+  "original_rows": {
+    "train": 363827,
+    "validation": 40429,
+    "test": 385618
+  },
+  "sample_rows": 100000,
+  "sample_class_counts": {
+    "0": 63070,
+    "1": 36930
+  },
+  "seed": 42,
+  "vocabulary_size": 100000,
+  "feature_shapes": {
+    "train": [
+      100000,
+      200003
+    ],
+    "validation": [
+      40429,
+      200003
+    ]
+  },
+  "model_configuration": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": 0.0,
+    "max_iter": 1000,
+    "n_jobs": null,
+    "penalty": "deprecated",
+    "random_state": 42,
+    "solver": "liblinear",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "iterations": [
+    13
+  ],
+  "training_warnings": [],
+  "sklearn_version": "1.9.1",
+  "example_predictions": [
+    {
+      "sentence1": "How can I learn Python?",
+      "sentence2": "What is the best way to study Python?",
+      "predicted_class": 1,
+      "paraphrase_probability": 0.7816144416976232,
+      "label": "Paraphrase"
+    },
+    {
+      "sentence1": "What causes rain?",
+      "sentence2": "How do I bake a chocolate cake?",
+      "predicted_class": 0,
+      "paraphrase_probability": 0.17309073944910452,
+      "label": "Not Paraphrase"
+    },
+    {
+      "sentence1": "The dog chased the cat.",
+      "sentence2": "The cat chased the dog.",
+      "predicted_class": 1,
+      "paraphrase_probability": 0.8714386670553496,
+      "label": "Paraphrase"
+    }
+  ],
+  "csv_sha256": {
+    "train": "5e2057359b2b91e59ab0fae9aec986ec804076f3e767df448bf52224228fbcec",
+    "validation": "83cd53227926e6700a5638e63638157e4db6befafe0723a270d7ba4d7d4054d2",
+    "test": "05707a4e81a82b44ff7340469b36e455e02a696abf94437503e1619703971792"
+  },
+  "verification": {
+    "feature_symmetry": true,
+    "reloaded_full_validation_probabilities_match": true
+  }
+}

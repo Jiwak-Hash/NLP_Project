@@ -1,0 +1,183 @@
+{
+  "metrics": {
+    "accuracy": 0.8132528630438547,
+    "precision": 0.7016386231166831,
+    "recall": 0.8572964256920182,
+    "f1": 0.7716964015724221,
+    "macro_f1": 0.8068534740765769,
+    "roc_auc": 0.8995275106941715
+  },
+  "confusion_matrix": [
+    [
+      20119,
+      5426
+    ],
+    [
+      2124,
+      12760
+    ]
+  ],
+  "confusion_matrix_order": "rows=true, columns=predicted, labels=[0,1]",
+  "classification_report": {
+    "Not Paraphrase": {
+      "precision": 0.9045092838196287,
+      "recall": 0.7875905265218243,
+      "f1-score": 0.8420105465807316,
+      "support": 25545.0
+    },
+    "Paraphrase": {
+      "precision": 0.7016386231166831,
+      "recall": 0.8572964256920182,
+      "f1-score": 0.7716964015724221,
+      "support": 14884.0
+    },
+    "accuracy": 0.8132528630438547,
+    "macro avg": {
+      "precision": 0.8030739534681559,
+      "recall": 0.8224434761069213,
+      "f1-score": 0.8068534740765769,
+      "support": 40429.0
+    },
+    "weighted avg": {
+      "precision": 0.8298221306893845,
+      "recall": 0.8132528630438547,
+      "f1-score": 0.816124283395798,
+      "support": 40429.0
+    }
+  },
+  "leakage_audit": {
+    "normalization": "collapse whitespace, case-sensitive, unordered sentence pairs",
+    "shared_unique_pairs": 2,
+    "excluded_training_rows": 2,
+    "training_rows_after_removal": 363825,
+    "remaining_shared_pairs": 0,
+    "contradictory_train_pairs": 0,
+    "contradictory_validation_pairs": 0,
+    "contradictory_pairs_across_labeled_splits": 0,
+    "contradictory_retained_train_pairs": 0
+  },
+  "encoder": {
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "embedding_dimension": 384,
+    "normalized": true,
+    "max_seq_length": 256,
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "sentence-transformers": "6.3.0",
+      "transformers": "5.23.0",
+      "scikit-learn": "1.9.1"
+    }
+  },
+  "device": "cpu",
+  "cuda_available": false,
+  "cache": {
+    "unique_sentences": 223660,
+    "cache": "/home/jiwak/NLP_Project/models/sbert_cache/3a111ccebb1b31193ab3305c02417df26c423c5f08e10cbb1655c8489bdf2168.npy",
+    "key": "3a111ccebb1b31193ab3305c02417df26c423c5f08e10cbb1655c8489bdf2168"
+  },
+  "training_rows": 100000,
+  "validation_rows": 40429,
+  "sample_sha256": "3d96190480714e3dd60454d5e82c3d2c69756568f0451f1bbfbad51981c51d3a",
+  "sample_class_counts": {
+    "0": 63070,
+    "1": 36930
+  },
+  "sample_verification": "Same unchanged Phase 2 loader, filter and train_test_split procedure; no original index manifest was saved in Phase 2",
+  "feature_shapes": [
+    [
+      100000,
+      769
+    ],
+    [
+      40429,
+      769
+    ]
+  ],
+  "classifier": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": 0.0,
+    "max_iter": 1000,
+    "n_jobs": null,
+    "penalty": "deprecated",
+    "random_state": 42,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "iterations": [
+    26
+  ],
+  "warnings": [],
+  "examples": [
+    {
+      "sentence1": "How can I learn Python?",
+      "sentence2": "What is the best way to study Python?",
+      "intended_label": 1,
+      "predicted_class": 1,
+      "label": "Paraphrase",
+      "paraphrase_probability": 0.8763535022735596,
+      "cosine_similarity": 0.8315802812576294,
+      "agrees_with_intended": true
+    },
+    {
+      "sentence1": "What causes rain?",
+      "sentence2": "How do I bake a chocolate cake?",
+      "intended_label": 0,
+      "predicted_class": 0,
+      "label": "Not Paraphrase",
+      "paraphrase_probability": 0.0008680727332830429,
+      "cosine_similarity": 0.13188953697681427,
+      "agrees_with_intended": true
+    },
+    {
+      "sentence1": "The dog chased the cat.",
+      "sentence2": "The cat chased the dog.",
+      "intended_label": 0,
+      "predicted_class": 1,
+      "label": "Paraphrase",
+      "paraphrase_probability": 0.9790120720863342,
+      "cosine_similarity": 0.9913338422775269,
+      "agrees_with_intended": false
+    },
+    {
+      "sentence1": "He bought a car.",
+      "sentence2": "He purchased an automobile.",
+      "intended_label": 1,
+      "predicted_class": 1,
+      "label": "Paraphrase",
+      "paraphrase_probability": 0.7175142168998718,
+      "cosine_similarity": 0.9159471988677979,
+      "agrees_with_intended": true
+    },
+    {
+      "sentence1": "I like coffee.",
+      "sentence2": "I do not like coffee.",
+      "intended_label": 0,
+      "predicted_class": 1,
+      "label": "Paraphrase",
+      "paraphrase_probability": 0.5812833309173584,
+      "cosine_similarity": 0.8024633526802063,
+      "agrees_with_intended": false
+    },
+    {
+      "sentence1": "The meeting was postponed.",
+      "sentence2": "The meeting was moved to a later date.",
+      "intended_label": 1,
+      "predicted_class": 0,
+      "label": "Not Paraphrase",
+      "paraphrase_probability": 0.32575738430023193,
+      "cosine_similarity": 0.7038222551345825,
+      "agrees_with_intended": false
+    }
+  ],
+  "verification": {
+    "symmetry": true,
+    "reloaded_validation_probabilities_match": true
+  }
+}

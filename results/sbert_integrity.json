@@ -1,0 +1,19 @@
+{
+  "unchanged": true,
+  "sha256": {
+    "data/csv/qqp_test.csv": "05707a4e81a82b44ff7340469b36e455e02a696abf94437503e1619703971792",
+    "data/csv/qqp_validation.csv": "83cd53227926e6700a5638e63638157e4db6befafe0723a270d7ba4d7d4054d2",
+    "data/csv/qqp_train.csv": "5e2057359b2b91e59ab0fae9aec986ec804076f3e767df448bf52224228fbcec",
+    "models/baseline_model.joblib": "e81b603712ac895744c4af272c4b49995b1567c4050d7d87212374a83cc9c007",
+    "models/tfidf_vectorizer.joblib": "4e431209f21aa8c85ad5e4549366da691b38ad1aaff1dbeff56f17ef60e32d4d",
+    "models/scalar_scaler.joblib": "60f4811849ed7cf1e80732edf826568d81b11f0cec8c9d4a7b52a2d27431d7ac",
+    "results/baseline_confusion_matrix.csv": "78bafcba74b0d2e849504fa47f122361f70093bd0a6471ad23722955e4bb036b",
+    "results/baseline_metrics.json": "4e34018bda725ceaf8358e479dff2bd4ab74d41e8ebba95aa74c0731d17d7bc8",
+    "results/baseline_classification_report.txt": "f8e1736f5bb66da4c42e62e67d4c9b2cd6ca2d1208ad3f11355eb6e125cab9af",
+    "results/figures/baseline_confusion_matrix.png": "5e75c1d67dbc723fbe76b68a9219659001b6719f404e1784b1f9a531a74767ab",
+    "results/figures/baseline_roc_curve.png": "039b038268186d717c783df22da87047e0a30fd966382f8e8ea9139bf6625d7f",
+    "results/figures/sentence_length_distribution.png": "f837accbecde3e5a913d5101ff6432f814dc6ecf11cf4451350f3bb62719b08c",
+    "results/figures/word_overlap_distribution.png": "93279c60d77dcf9bf3ed45472f871d64106e4ff488d7ed1da0dc2507ae604499",
+    "results/figures/class_distribution.png": "cb187f4eab9408b82fdfa1fc463ea5545274efae343ba8d2fa9971209a32b6a2"
+  }
+}
